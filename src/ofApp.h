@@ -15,6 +15,7 @@ class ofApp : public ofBaseApp{
 		ofEasyCam cam;
 		vector<ofMesh> lattices;
 		int latticesNum = 10;
+		float zDistance = 400;
 
 		ofxPanel gui;
 	    ofParameter<bool> drawFaces, drawWireframes;
@@ -23,5 +24,7 @@ class ofApp : public ofBaseApp{
 	    ofParameter<glm::vec2> noiseScale;
 	    ofParameter<ofColor> colorNear;
 	    ofParameter<ofColor> colorFar;
+
+	    ofShader shader;
 		
 };
