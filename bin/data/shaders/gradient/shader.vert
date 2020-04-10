@@ -12,11 +12,10 @@ in vec2 texcoord;
 
 // these are passed in from OF programmable renderer
 uniform mat4 modelViewProjectionMatrix;
-uniform mat4 modelViewMatrix;
-uniform mat4 projectionMatrix;
-// Honestly? not quite sure what these are
-uniform mat4 textureMatrix;
-uniform mat4 normalMatrix;
+
+// passed in uniforms
+uniform float u_time;
+
 
 void main(){
     vecNormal = normal.xzy;

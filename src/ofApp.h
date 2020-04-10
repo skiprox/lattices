@@ -14,6 +14,8 @@ class ofApp : public ofBaseApp{
 
 		ofEasyCam cam;
 		vector<ofMesh> lattices;
+		vector<ofMesh> latticesVer;
+		int gapSize = 4;
 		int latticesNum = 10;
 		float zDistance = 400;
 
@@ -21,10 +23,11 @@ class ofApp : public ofBaseApp{
 	    ofParameter<bool> drawFaces, drawWireframes;
 	    ofParameter<float> noiseAmp;
 	    ofParameter<float> noiseFreq;
-	    ofParameter<glm::vec2> noiseScale;
+	    ofParameter<glm::vec3> noiseScale;
 	    ofParameter<ofColor> colorNear;
 	    ofParameter<ofColor> colorFar;
 
-	    ofShader shader;
+	    ofShader lightingShader;
+	    ofShader gradientShader;
 		
 };
