@@ -11,6 +11,7 @@ class ofApp : public ofBaseApp{
 		void update();
 		void updateNoise();
 		void draw();
+		void keyReleased(int key);
 
 		ofEasyCam cam;
 		vector<ofMesh> lattices;
@@ -18,6 +19,8 @@ class ofApp : public ofBaseApp{
 		int gapSize = 4;
 		int latticesNum = 10;
 		float zDistance = 400;
+
+		bool showGui = true;
 
 		ofxPanel gui;
 	    ofParameter<bool> drawFaces, drawWireframes;
